@@ -18,7 +18,7 @@ namespace XtraCube.Plugins.AllOfUs.Handlers
         {
             string name = player.PlayerInfo.PlayerName;
             byte color = player.PlayerInfo.ColorId;
-            await player.SetNameAsync("[FF0000FF]All Of Us Bot | Public");
+            await player.SetNameAsync("[FF0000FF]Amongo");
             await player.SetColorAsync((byte)0);
             await player.SendChatAsync(message);
             await player.SetNameAsync(name);
@@ -38,7 +38,6 @@ namespace XtraCube.Plugins.AllOfUs.Handlers
             {
                 await Task.Delay(1000);
                 await SendMessage(e.PlayerControl, "Welcome to the server!");
-                await SendMessage(e.PlayerControl, "This server is powered by All of Us Bot, an Impostor plugin designed to be used with All of Us Mod, a 100 Player Mod for Among Us!");
                 await SendMessage(e.PlayerControl, "Type /help for a list of all the commands!");
             }
 
